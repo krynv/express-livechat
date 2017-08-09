@@ -1,0 +1,15 @@
+{
+  "name": "express-livechat",
+  "version": "0.0.0",
+  "description": "A chat client created with express and stack.io",
+  "main": "server.js",
+  "author": "Vitaliy Krynytskyy",
+  "dependencies": {
+    "express": "^4.15.4",
+    "serve-favicon": "^2.4.3",
+    "socket.io": "^2.0.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
