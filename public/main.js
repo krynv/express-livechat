@@ -1,18 +1,18 @@
 $(() => {
     var FADE_TIME = 150; // in ms
     var TYPING_TIMER_LENGTH = 400;
-    var COLORS = [
+    var COLOURS = [
         '#e21400', '#91580f', '#f8a700', '#f78b00',
         '#58dc00', '#287b00', '#a8f07a', '#4ae8c4',
         '#3b88eb', '#3824aa', '#a700ff', '#d300e7',
     ];
 
     var $window = $(window);
-    var $usernameInputBox = $('.usernameInput'); 
-    var $messagePool = $('.messages'); 
+    var $usernameInputBox = $('.usernameInput');
+    var $messagePool = $('.messages');
     var $inputMessageBox = $('.inputMessage');
 
-    var $loginPage = $('.login.page'); 
+    var $loginPage = $('.login.page');
     var $chatPage = $('.chat.page');
 
     var username;
@@ -25,7 +25,7 @@ $(() => {
 
     function addParticipantsMessage(data) {
         var message = '';
-        
+
         if (data.numUsers === 1) {
             message += "1 member remaining";
         } else {
@@ -133,7 +133,7 @@ $(() => {
         }
         if (options.prepend) {
             $messagePool.prepend($element);
-        } 
+        }
         else {
             $messagePool.append($element);
         }
@@ -179,10 +179,10 @@ $(() => {
             hash = username.charCodeAt(i) + (hash << 5) - hash;
         }
 
-         // calculate colour based on generated hash
-        var index = Math.abs(hash % COLORS.length);
+        // calculate colour based on generated hash
+        var index = Math.abs(hash % COLOURS.length);
 
-        return COLORS[index];
+        return COLOURS[index];
     }
 
     // MARK: Keyboard Events
@@ -199,7 +199,7 @@ $(() => {
                 sendMessage();
                 socket.emit('stop typing');
                 typing = false;
-            } 
+            }
             else {
                 setUsername();
             }
@@ -229,7 +229,7 @@ $(() => {
         connected = true;
 
         var message = "A chat client created by Vitaliy Krynytskyy";
-        
+
         log(message, {
             prepend: true,
         });

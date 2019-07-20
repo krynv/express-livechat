@@ -1,13 +1,15 @@
-# A livechat application created with express and socket.io
+# express-livechat
 
-Install dependencies:
+This is a very basic POC project created using JQuery and Socket.io. 
+Users are able to enter a username and share messages in real-time.
 
+## Demo
+![Demo](express-livechat-demo.gif)
+
+To start the app:
+
+    git clone git@github.com:krynv/express-livechat.git
     npm i
-
-Run application:
-
     npm start
 
-Clients connect via port 1337
-
-    http://localhost:1337/
+Connect at: http://localhost:1337/
