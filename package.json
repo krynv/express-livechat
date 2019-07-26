@@ -3,7 +3,11 @@
     "version": "1.0.0",
     "description": "A basic chat client created with express and stack.io",
     "main": "server.js",
-    "author": "Vitaliy Krynytskyy <Vitaliy.Krynytskyy@gmail.com>",
+    "author": {
+        "email": "Vitaliy.Krynytskyy@gmail.com",
+        "name": "Vitaliy Krynytskyy",
+        "url": "http://github.com:krynv/"
+    },
     "repository": {
         "type": "git",
         "url": "git://github.com:krynv/express-livechat.git"
