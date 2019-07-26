@@ -1,5 +1,7 @@
 # express-livechat
 
+[![CircleCI](https://circleci.com/gh/krynv/express-livechat.svg?style=svg)](https://circleci.com/gh/krynv/express-livechat)
+
 This is a very basic POC project created using JQuery and Socket.io. 
 Users are able to enter a username and share messages in real-time.
 
